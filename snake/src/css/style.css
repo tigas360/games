@@ -1,0 +1,33 @@
+body{
+    background: rgb(25,25,40);
+    height: 95vh;
+    width: 95wh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+canvas{
+    box-sizing: border-box;
+    background: rgb(50,50,50);
+    border: 3px solid orangered;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: gold;
+    -webkit-text-stroke-width: thin;
+}
+
+#game-score, #game-life{
+    color: yellow;
+    font-weight: 700;
+    padding: 0 45px 0 15px;
+}
+.game-panel{
+    display: flex;
+    flex-direction:row;
+    align-content: space-around;
+}
