@@ -21,7 +21,7 @@ h2{
     -webkit-text-stroke-width: thin;
 }
 
-#game-score, #game-life{
+#game-score, #game-life, #game-rank{
     color: yellow;
     font-weight: 700;
     padding: 0 45px 0 15px;
@@ -30,4 +30,27 @@ h2{
     display: flex;
     flex-direction:row;
     align-content: space-around;
+    justify-content: space-around;
+    border: 1px solid rgba(236, 255, 169, 0.911);
+    border-radius: 5px;
+    margin: 2px 0 4px 0;
+}
+.frame{
+    border: 1px solid white;
+    border-radius:8px;
+    margin: 8px 4px;
+}
+
+.textBlink{
+    animation-name: ani-blink-text;
+    animation-duration: 0.8s;
+    animation-iteration-count: 8;
+}
+
+@keyframes ani-blink-text{
+    0%{ color: yellow; }
+    49%{ color: yellow; }
+    50%{ color:transparent; }
+    99%{ color:transparent; }
+    100%{ color: yellow; }
 }
